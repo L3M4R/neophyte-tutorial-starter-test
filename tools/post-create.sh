@@ -2,6 +2,8 @@
 # NEOPHYTE Tutorial by mlewand69@gmail.com
 # postCreateCommand"
 
+touch neophyte.creating
+
 echo "===== INSTALL ENVIRONMENT FILE ..."
 [ ! -e ~/.neophyterc ] && cp .neophyterc ~/.neophyterc && echo "- RC FILE COPIED TO ~/.neophyterc"
 grep --quiet ". ~/.neophyterc" < ~/.bashrc || echo "
