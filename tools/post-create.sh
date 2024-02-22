@@ -14,3 +14,4 @@ pip install openai
 pip install ollama
 pip install litellm
 
+touch neophyte.ready
