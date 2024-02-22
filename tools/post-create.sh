@@ -1,6 +1,6 @@
 #!/bin/bash
 # NEOPHYTE Tutorial by mlewand69@gmail.com
-# postCreateCommand"
+# postCreateCommand (after container creation)
 
 echo "===== INSTALL ENVIRONMENT FILE ..."
 [ ! -e ~/.neophyterc ] && cp .neophyterc ~/.neophyterc && echo "- RC FILE COPIED TO ~/.neophyterc"
