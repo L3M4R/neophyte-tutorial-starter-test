@@ -7,7 +7,6 @@
     "vscode": {
       // Set *default* container specific settings.json values on container create.
       "settings": {
-        "locale": "en-US"
       },
 
       // Add the IDs of extensions you want installed when the container is created.
