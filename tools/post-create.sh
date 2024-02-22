@@ -2,10 +2,15 @@
 # NEOPHYTE Tutorial by mlewand69@gmail.com
 # postCreateCommand"
 
-echo "===== INSTALL RC FILE ..."
+echo "===== INSTALL ENVIRONMENT FILE ..."
 [ ! -e ~/.neophyterc ] && cp .neophyterc ~/.neophyterc && echo "- RC FILE COPIED TO ~/.neophyterc"
 grep --quiet ". ~/.neophyterc" < ~/.bashrc || echo "
 # NEOPHYTE Tutorial environment update
-export PATH=$PATH:/home/codespace/tools
 . ~/.neophyterc
 " >> ~/.bashrc
+
+echo "===== INSTALL MODULES ..."
+pip install openai
+pip install ollama
+pip install litellm
+
