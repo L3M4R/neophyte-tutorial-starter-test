@@ -2,4 +2,4 @@
 # NEOPHYTE Tutorial by mlewand69@gmail.com
 # postAttachCommand
 
-echo "READY :-)"
+date >> neophyte.attached
