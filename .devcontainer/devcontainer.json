@@ -1,9 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
- 	
+  
   // Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "tools/configure-postCreateCommand.sh",
-	"postAttachCommand": "tools/configure-postAttachCommand.sh",
+  "postCreateCommand": "tools/configure-postCreateCommand.sh",
+  "postAttachCommand": "tools/configure-postAttachCommand.sh",
 
   "features": {
   }
