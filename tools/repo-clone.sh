@@ -1,5 +1,5 @@
 #!/bin/bash
-# NEOPHYTE LLM Tutorial by mlewand69@gmail.com
+# NEOPHYTE Tutorial by mlewand69@gmail.com
 set -euo pipefail
 
 # GitHUB variables
@@ -20,15 +20,6 @@ echo "INSTALL NEOPHYTE TUTORIAL REPO github.com/L3M4R/$CLONED_REPO_NAME ..."
 echo ==============================================================================================
 git clone "$CLONED_REPO_URL" "$REPO_FOLDER" -b "$CLONED_REPO_BRANCH"
 rm -rf $REPO_FOLDER/.{git,gitignore,vscode} && echo "- EXTRA FILES CLEANED ..."
-
-# tutorial environment 
-set +e
-[ ! -e ~/.neophyterc ] && cp $REPO_FOLDER/.neophyterc ~/.neophyterc && echo "- RC FILE COPIED TO ~/.neophyterc"
-grep --quiet ". ~/.neophyterc" < ~/.bashrc || echo "
-# NEOPHYTE Tutorial environment update
-export PATH=\$PATH:$REPO_FOLDER/tools
-. ~/.neophyterc
-" >> ~/.bashrc && echo "- RC ADDED TO ~/.bashrc"
 
 echo ==============================================================================================
 du -sh $REPO_FOLDER
