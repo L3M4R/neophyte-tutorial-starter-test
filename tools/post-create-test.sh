@@ -6,3 +6,5 @@ docker exec -it ollama /bin/bash -c "ollama pull gemma:2b"
 docker exec -it ollama /bin/bash -c "ollama list"
 
 tools/post-create-test.py
+
+docker stop ollama
