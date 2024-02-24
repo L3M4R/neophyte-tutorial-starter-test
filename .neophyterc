@@ -6,17 +6,3 @@ export OPENAI_API_KEY=abracadabra
 # Replicate
 export REPLICATE_API_TOKEN=abracadabra
 
-# AZURE OpenAI
-export AZURE_API_KEY=abracadabra
-export AZURE_API_BASE=abracadabra
-export AZURE_API_VERSION=abracadabra
-
-# AWS BEDROCK access keys
-export AWS_ACCESS_KEY_ID=abracadabra
-export AWS_SECRET_ACCESS_KEY=abracadabra
-export AWS_DEFAULT_REGION=eu-west-1
-
-# GCP (service account)
-export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/abracadabra
-export VERTEXAI_PROJECT=abracadabra
-export VERTEXAI_LOCATION=us-central1
