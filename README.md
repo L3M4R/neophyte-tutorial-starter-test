@@ -1,6 +1,6 @@
 # NEOPHYTE TUTORIAL ENVIRONMENT STARTER (test)
 
-## WARNING: This can cost you a bit if you have no free cpu hours on your GitHUB account.
+## WARNING: This can cost you a bit if you have no remaining FREE cpu hours on your GitHUB account.
 
 Steps:
 - create new Codespaces, give it 4 cores to make it faster
