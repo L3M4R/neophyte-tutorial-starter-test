@@ -5,7 +5,6 @@
 echo "===== INSTALL MODULES ..."
 pip install openai
 pip install ollama
-pip install litellm
 
 echo "===== INSTALL ENVIRONMENT FILE ..."
 [ ! -e ~/.neophyterc ] && mv .neophyterc ~/.neophyterc && echo "- RC FILE MOVED TO ~/.neophyterc"
