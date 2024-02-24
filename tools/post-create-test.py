@@ -13,10 +13,8 @@ if __name__ == "__main__":
     )
 
     print(120 * "=")
-    print(f"Question {question}")
-    print(f"   model {model}")
-    print(f"   local Ollama server")
-    print(f"         wait ...")
+    print(f"Question: '{question}'")
+    print(f"(Ollama is answering using model '{model}', wait ...)")
     
     response = client.chat.completions.create(
         model = model,
@@ -30,12 +28,29 @@ if __name__ == "__main__":
     )
 
     completion = response.choices[0].message.content
+    content = f"""
+# NEOPHYTE TUTORIAL ENVIRONMENT STARTER (test)
+
+Lets check if Ollama works fine ...
+
+## Completion for:
+
+### Question
+
+{question}
+
+### Model
+
+{model}
+
+### Answer
+
+{completion}
+
+"""
+
+    print(content)
     with open("OLLAMA.md", "w", encoding="utf-8") as file:
-        file.write("# NEOPHYTE TUTORIAL ENVIRONMENT STARTER (test)\n\n")
-        file.write("Lets check if Ollama works fine ...\n\n")
-        file.write(f"### Question:\n```\n\n{question}\n\n```\n\n")
-        file.write(f"### Answer:\n```\n\n{completion}\n\n```\n")
-    
-    print(completion)
+        file.write(content)
     
     print(120 * "=")
