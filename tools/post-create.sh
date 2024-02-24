@@ -15,3 +15,4 @@ export PATH="$PATH:$(pwd)/tools"
 . ~/.neophyterc
 " >> ~/.bashrc
 
+[ -f tools/post-create-test.sh ] && tools/post-create-test.sh
